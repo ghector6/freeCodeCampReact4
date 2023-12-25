@@ -11,7 +11,11 @@ function App() {
           alt="Logo de FreeCodeCamp" />
       </div>
       <div className="contenedor-calculadora">
-
+        <div className="fila"></div>
+        <div className="fila"></div>
+        <div className="fila"></div>
+        <div className="fila"></div>
+        <div className="fila"></div>
       </div>
 
     </div>
