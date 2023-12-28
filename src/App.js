@@ -1,10 +1,14 @@
 import './App.css';
-import freeCodeCampLogo from "./imagenes/freecodecamp-logo.png"
+import freeCodeCampLogo from "./imagenes/freecodecamp-logo.png";
 import Boton from "./componentes/Boton.js"
 import Pantalla from "./componentes/Pantalla.js"
 import BotonClear from "./componentes/BotonClear.js"
+import {useState} from "react"
 
 function App() {
+
+  const [input, setInput] = useState("")
+
   return (
     <div className="App">
       <div className="freecodecamp-logo-contenedor">
@@ -14,7 +18,7 @@ function App() {
           alt="Logo de FreeCodeCamp" />
       </div>
       <div className="contenedor-calculadora">
-        <Pantalla/>
+        <Pantalla input={input}/>
         <div className="fila">
           <Boton>1</Boton>
           <Boton>2</Boton>
