@@ -9,6 +9,10 @@ function App() {
 
   const [input, setInput] = useState("")
 
+  const addInput = (value) => {
+    setInput(input + value);
+  }
+
   return (
     <div className="App">
       <div className="freecodecamp-logo-contenedor">
