@@ -42,13 +42,13 @@ function App() {
           <Boton handleClick={addInput}>*</Boton>
         </div>
         <div className="fila">
-          <Boton>=</Boton>
-          <Boton>0</Boton>
-          <Boton>.</Boton>
-          <Boton>/</Boton>
+          <Boton handleClick={addInput}>=</Boton>
+          <Boton handleClick={addInput}>0</Boton>
+          <Boton handleClick={addInput}>.</Boton>
+          <Boton handleClick={addInput}>/</Boton>
         </div>
         <div className="fila">
-          <BotonClear>Clear</BotonClear>
+          <BotonClear handleClear={ () => setInput("")}>Clear</BotonClear>
         </div>
       </div>
 
