@@ -7,11 +7,11 @@ import {useState} from "react"
 
 function App() {
 
-  const [input, setInput] = useState("")
+  const [input, setInput] = useState("");
 
   const addInput = (value) => {
     setInput(input + value);
-  }
+  };
 
   return (
     <div className="App">
@@ -24,22 +24,22 @@ function App() {
       <div className="contenedor-calculadora">
         <Pantalla input={input}/>
         <div className="fila">
-          <Boton>1</Boton>
-          <Boton>2</Boton>
-          <Boton>3</Boton>
-          <Boton>+</Boton>
+          <Boton handleClick={addInput}>1</Boton>
+          <Boton handleClick={addInput}>2</Boton>
+          <Boton handleClick={addInput}>3</Boton>
+          <Boton handleClick={addInput}>+</Boton>
         </div>
         <div className="fila">
-          <Boton>4</Boton>
-          <Boton>5</Boton>
-          <Boton>6</Boton>
-          <Boton>-</Boton>
+          <Boton handleClick={addInput}>4</Boton>
+          <Boton handleClick={addInput}>5</Boton>
+          <Boton handleClick={addInput}>6</Boton>
+          <Boton handleClick={addInput}>-</Boton>
         </div>
         <div className="fila">
-          <Boton>7</Boton>
-          <Boton>8</Boton>
-          <Boton>9</Boton>
-          <Boton>*</Boton>
+          <Boton handleClick={addInput}>7</Boton>
+          <Boton handleClick={addInput}>8</Boton>
+          <Boton handleClick={addInput}>9</Boton>
+          <Boton handleClick={addInput}>*</Boton>
         </div>
         <div className="fila">
           <Boton>=</Boton>
