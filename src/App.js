@@ -1,9 +1,10 @@
 import './App.css';
 import freeCodeCampLogo from "./imagenes/freecodecamp-logo.png";
-import Boton from "./componentes/Boton.js"
-import Pantalla from "./componentes/Pantalla.js"
-import BotonClear from "./componentes/BotonClear.js"
-import {useState} from "react"
+import Boton from "./componentes/Boton.js";
+import Pantalla from "./componentes/Pantalla.js";
+import BotonClear from "./componentes/BotonClear.js";
+import {useState} from "react";
+import { evaluate} from "mathjs";
 
 function App() {
 
@@ -12,6 +13,10 @@ function App() {
   const addInput = (value) => {
     setInput(input + value);
   };
+
+  const calculateResult = ()=> {
+    setInput(evaluate(input);
+  }
 
   return (
     <div className="App">
