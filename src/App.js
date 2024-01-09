@@ -15,7 +15,11 @@ function App() {
   };
 
   const calculateResult = ()=> {
-    setInput(evaluate(input))
+    if (input){
+      setInput(evaluate(input))
+    } else {
+      alert("No hay nada que calcular");
+    }
   };
 
   return (
