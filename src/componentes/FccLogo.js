@@ -1,5 +1,6 @@
 import React from 'react';
 import freeCodeCampLogo from '../imagenes/freecodecamp-logo.png'
+import '../stylesheets/FccLogo.css';
 const FreeCodeCampLogo = () => {
   return (
 
